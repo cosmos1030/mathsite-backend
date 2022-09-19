@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="style/basic.css">
+    <link rel="stylesheet" href="style/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="read.html">문제 풀기</a></li>
+        <li><a href="create.html">문제 만들기</a></li>
+        <li style="float:right"><a href="#">Sign in</a></li>
+        <li style="float:right"><a href="#">Sign up</a></li>
+    </ul>
+    <div class="row">
+        <div class="column">
+            <h2>사이트 설명</h2>
+            <p>직접 수학문제를 만들고 이를 공유하기 위한 플랫폼입니다</p>
+        </div>
+
+        <div class="column">
+            <h2>문제 풀기</h2>
+            <p>다른 사람이 만든 문제를 풀어보세요!</p>
+        </div>
+
+        <div class="column">
+            <h2>문제 만들기</h2>
+            <p>직접 문제를 만들고 공유해보세요!</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+
+</html>
