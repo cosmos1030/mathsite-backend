@@ -1,11 +1,11 @@
 tasks:
-  - init:
+  - init: |
       python -m venv venv
       source venv/bin/activate
       pip install --upgrade pip wheel setuptools
       pip install Django
       python manage.py migrate
-    command:
+    command: }
       source venv/bin/activate
       python manage.py runserver
   
