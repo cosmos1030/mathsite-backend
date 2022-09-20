@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/basic.css' %}">
+    <link rel="stylesheet" href="{% static 'css/create.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="..">Home</a></li>
+        <li><a href="../read.html">문제 풀기</a></li>
+        <li><a href="" class="active">문제 만들기</a></li>
+        <li style="float:right"><a href="#">Sign in</a></li>
+        <li style="float:right"><a href="#">Sign up</a></li>
+    </ul>
+
+    <h2>나만의 수학 문제를 만들어보세요!</h2>
+
+    <form>
+        <label for="question">문제</label><br>
+        <textarea></textarea><br>
+        <label for="solution">풀이</label><br>
+        <textarea id="solution"></textarea>
+        <button type="submit">문제 만들기!</button>
+    </form>
+
+    <div class="footer">
+        <p>Footer</p>
+    </div>
+</body>
+
+</html>
