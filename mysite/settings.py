@@ -129,3 +129,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 ) 
+
+CSRF_TRUSTED_ORIGINS = [
+        'https://8000-cosmos1030-mathsiteback-ns7xdargxv2.ws-us67.gitpod.io'
+    ]

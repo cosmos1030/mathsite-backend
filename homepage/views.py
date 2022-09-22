@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Post
 
 # Create your views here.
 def index(request):
@@ -8,4 +9,5 @@ def create(request):
     return render(request, 'homepage/create.html')
 
 def read(request):
-    return render(request, 'homepage/read.html')
+    posts = Post.objects.filter()
+    return render(request, 'homepage/read.html', {'posts': posts})
